@@ -1,0 +1,36 @@
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+  padding: 0 20px;
+}
+
+.producto {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.producto h3 {
+  color: #d84315;
+  margin: 10px 0 5px;
+}
+
+.producto p {
+  color: #6d4c41;
+  font-weight: bold;
+}

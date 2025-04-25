@@ -1,0 +1,81 @@
+
+
+h1 {
+  color: #c0392b;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.intro {
+  color: #8e4b10;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.campero-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.formulario, .info-empresa {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #c0392b;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d35400;
+}
+
+#mensaje-enviado {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+  display: none;
+}
+
+#mensaje-enviado.oculto {
+  display: none;
+}
+
+.info-empresa h3 {
+  color: #c0392b;
+  margin-bottom: 10px;
+}
+
+.info-empresa p {
+  color: #5d4037;
+  margin: 5px 0;
+}

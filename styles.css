@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  min-height: 100vh;
+}
+.navbar {
+  background-image: 
+    linear-gradient(270deg, rgba(216, 67, 21, 0.7), rgba(255, 183, 77, 0.7), rgba(216, 67, 21, 0.7)),
+    url('Fondo.png');
+  background-size: 600% 600%, cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: moverGradiente 10s ease infinite;
+  padding: 15px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links li a.active {
+  background-color: #fff3e0;
+  color: #d84315;
+}
+
+/* Descripción */
+.descripcion {
+  text-align: center;
+  padding: 30px 15px;
+  background-color: #fff3e0;
+}
+
+.descripcion h2 {
+  color: #d84315;
+  margin-bottom: 10px;
+}
+
+.descripcion p {
+  color: #6d4c41;
+}
+
+/* Hamburguesa */
+.hamburguesa {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.linea {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(216, 67, 21, 0.9);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 15px 0;
+    z-index: 10;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburguesa {
+    display: flex;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+}
+@keyframes moverGradiente {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

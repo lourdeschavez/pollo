@@ -1,0 +1,45 @@
+
+
+h1 {
+  color: #d84315;
+  font-size: 30px;
+}
+
+.intro {
+  color: #6d4c41;
+  margin-bottom: 30px;
+}
+
+.tarjetas-ubicaciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.tarjeta {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta h3 {
+  color: #bf360c;
+  margin-bottom: 5px;
+}
+
+.mapa-campero {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}

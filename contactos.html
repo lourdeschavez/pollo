@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Pollo Campero</title>
+  <link rel="stylesheet" href="Contactos.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="Logo.jpg" alt="Pollo Campero Logo" class="logo-img">
+      <span class="logo-text">Pollo Campero</span>
+    </div>
+
+    <div class="hamburguesa" id="menu-btn">
+      <div class="linea"></div>
+      <div class="linea"></div>
+      <div class="linea"></div>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="nav-item active">Inicio</a></li>
+      <li><a href="galeria.html" class="nav-item">Galería de Productos</a></li>
+      <li><a href="ubicaciones.html" class="nav-item">Ubicaciones</a></li>
+      <li><a href="contactos.html" class="nav-item">Contacto</a></li>
+    </ul>
+  </nav>
+  </header>
+  <h1>Contáctanos - Pollo Campero</h1>
+  <p class="intro">¿Tienes preguntas, sugerencias o comentarios? En Pollo Campero queremos escucharte.</p>
+
+  <div class="campero-container">
+    <!-- Formulario -->
+    <div class="formulario">
+      <form id="camperoForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+        <p id="mensaje-enviado" class="oculto">¡Gracias por escribirnos! Te responderemos pronto.</p>
+      </form>
+    </div>
+
+    <!-- Información de contacto -->
+    <div class="info-empresa">
+      <h3>Pollo Campero Guatemala</h3>
+      <p>Calzada Roosevelt, zona 11</p>
+      <p>Tel: +502 2250-0000</p>
+      <p>Email: contacto@campero.com.gt</p>
+      <p>Horario: Todos los días, 8am - 9pm</p>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("camperoForm");
+    const mensaje = document.getElementById("mensaje-enviado");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      mensaje.classList.remove("oculto");
+      form.reset();
+    });
+  </script>
+  
+  <script src="script.js"></script>
+</body>
+</html>
